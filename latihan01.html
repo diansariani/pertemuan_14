@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQuery 01</title>
+</head>
+<body>
+
+    <h3>Judul konten</h3>
+    <p></p>
+    <div id="isikontenid">isi dari konten ID</div>
+    <div class="isikontencls">isi dari konten CLASS</div>
+    .......
+    1. ID layer DIV SPAN
+    2. CLASS
+    3. element html selain h3 dan p
+    
+    <h2>Artikel Konten</h2>
+    <p></p>
+    <SPAN id="header">isi dari header ID</SPAN>
+    <div class="isikontencls">isi dari konten header CLASS</div>
+    
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#isikontenid").html("Konten dengan jQuery pada element ID");
+            $(".isiheadercls").html("Konten dengan jQuery pada element CLASS");
+            $("h3").html("Latihan JQuery");
+            $("p").html("isi dari paragraph");
+
+            $("#header").html("Membuat Header dengan jQuery pada element ID");
+            $(".isiheadercls").html("Membuat isi Header dengan jQuery pada element CLASS");
+            $("h2").html("Latihan JQuery");
+            $("p").html("isi dari paragraph");
+        });
+
+        //document.getElementById("isikontenid").innerHTML = "konten pengganti <b>konten ID</b>
+        //document.getElementByClassName("isikontencls")// 
+    </script>
+    
+</body>
+</html>
